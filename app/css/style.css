@@ -1,0 +1,129 @@
+:root {
+    --primary-orange: rgb(255, 107, 0);
+    --secondary-orange: #FF8533;
+    --light-orange: #FFA366;
+    --dark-orange: #CC5500;
+    --pure-black: #000000;
+    --dark-gray: #1A1A1A;
+    --light-gray: #333333;
+    --white: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/Future_Friends.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    img {
+        width: 100%;
+    }
+        .container_logo {
+            height: 50px;
+            width: 50px;
+        }
+}
+
+body {
+
+    header {
+        .navbar {
+            position: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--pure-black);
+            display: flex;
+            justify-content: space-between;
+            padding-inline: 25px;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            align-items: center;
+            box-shadow: #FFFFFF;
+            h1 {
+                font-family: 'futura';
+                font-size: 2rem;
+                color: var(--primary-orange);
+            }
+            .burger-button {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 24px;
+                cursor: pointer;
+                div {
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--primary-orange);
+
+                }
+            }
+        }
+
+    }
+    main {
+        padding-top: 100px;
+        background-color: var(--pure-black);
+        color: var(--white);
+        #index_accueil {
+            z-index: 1;
+            text-align: center;
+            background-image:  url('../images/img-audi-a7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+            position: relative;
+            h2 {
+                font-family: 'futura';
+                color: var(--primary-orange);
+            }
+            .text_accueil {
+                width: 70%;
+                margin: auto;
+                padding: 25px;
+                background-color: rgba(255, 133, 51, 0.62);
+                margin-block: 25px;
+            }
+            button {
+                margin-bottom: 25px;
+                border: none;
+                padding: 10px 20px;
+                background-color: var(--primary-orange);
+                border-radius: 10px;
+            }
+        }
+        #index_etapes {
+            background-color: rgba(255, 133, 51, 0.62);
+
+            margin-block: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            article {
+                text-align: center;
+                background-color: var(--pure-black);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                h3 {
+                    font-family: 'futura';
+                    color: var(--primary-orange);
+                }
+            }
+        }
+
+    }
+    footer {
+
+    }
+}
+
